@@ -1,0 +1,9 @@
+digraph user_review_flow {
+  rankdir = LR;
+  newrank = true;
+  "商品" -> ユーザ [label = 購入・利用];
+  ユーザ -> クチコミ [label = 表現];
+  クチコミ -> "未来のユーザ\n=消費者" [label = 商品評価の形成];
+  "未来のユーザ\n=消費者" -> "商品" [label = 購買意思決定];
+  { rank=same; ユーザ クチコミ "商品" };
+}

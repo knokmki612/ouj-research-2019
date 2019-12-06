@@ -11,23 +11,24 @@
 </section>
 <section>
 
-<p>概要</p>
+<p>研究テーマの補足</p>
 
 <ol>
   <li>
 <strong>UXカーブ</strong>というUX評価の手法を<strong>応用</strong>して</li>
   <li>ユーザの<strong>クチコミ</strong>の記述を<strong>支援</strong>する</li>
   <li>
-<strong>ソフトウェア</strong>を<strong>実装</strong>した</li>
+<strong>ソフトウェア</strong>を<strong>実装</strong>した<br>
+ （＝有効性の評価はできなかった）</li>
 </ol>
 
 </section>
 <section>
 
-<p>クチコミとは</p>
+<p>元来のクチコミ</p>
 
 <blockquote>
-  <p>うわさ・評判などを口伝えに広めること。「口コミで売れる」</p>
+  <p>うわさ・評判などを口伝えに広めること。</p>
 
   <p>[補説]マスコミをもじった語。<br>
 1960年代の初めに使われだした。</p>
@@ -38,9 +39,7 @@
 </section>
 <section>
 
-<p>クチコミとは</p>
-
-<p>近年ではオンラインでの製品・サービスに関するクチコミが増えている</p>
+<p>本研究におけるクチコミ</p>
 
 <ul>
   <li>SNS</li>
@@ -48,14 +47,12 @@
   <li>ショッピングサイト</li>
 </ul>
 
-<p>本研究で扱う対象</p>
+<p>オンラインでの商品（製品・サービス）に関するクチコミを指す</p>
 
 </section>
 <section>
 
-<p>クチコミとは</p>
-
-<p>例:</p>
+<p>クチコミの例</p>
 
 <blockquote>
   <p>喜んでくれました<br>
@@ -72,36 +69,58 @@
 
 <p><img src="images/word-of-mouth-flow.svg" alt=""></p>
 
-<p>有用なクチコミは<br>
-商品の評価の参考になる</p>
+<p>有用なクチコミを読めば<br>
+効率的に商品が評価できる</p>
 
 </section>
 <section>
 
-<p>なぜクチコミの記述に支援が必要か</p>
+<p>クチコミの有用性に関する分析</p>
 
 <ol>
   <li>クチコミには主観的な表現が用いられる傾向</li>
   <li>主観的な表現が多いクチコミは有用性が低い</li>
 </ol>
 
-<p>主観的な表現だけでは、どんな商品なのか<br>
-評価することができない</p>
+<p>主観的な表現だけでは、<br>
+商品を評価することができない</p>
+
+<p>クチコミで評価できる商品の要素とは？</p>
 
 <p><small>参考：<a href="https://ipsj.ixsq.nii.ac.jp/ej/?action=repository_uri&amp;item_id=164274&amp;file_id=1&amp;file_no=1">商品レビュー文における主観的表現と有用性に関する検討</a></small></p>
 
 </section>
 <section>
 
-<p>どのようにしてクチコミの記述を支援するのか</p>
+<p><img src="images/4-quality-attribute-groups.svg" alt=""></p>
 
-<p>商品の評価に役立つ内容が含まれるよう<br>
-主観的な表現以外の記述を促す</p>
+<p><small>参考：<a href="https://www.ipa.go.jp/files/000054772.pdf">第1回利用時品質検討WG 参考資料1 利用時品質とその評価</a></small></p>
 
-<p>『主観的な表現以外の記述』とはなにか<br>
-掘り下げる必要がある</p>
+</section>
+<section>
 
-<p>→概念によって細分化できる</p>
+<ol>
+  <li>
+    <p>客観的設計品質：<br>
+ 利用前から商品がもつ特性</p>
+  </li>
+  <li>
+    <p>客観的利用品質：<br>
+ どんな風に利用して<br>
+ どのような結果が得られたか</p>
+  </li>
+  <li>
+    <p>主観的利用品質：<br>
+ 1.と2.を通してどのように感じたか<br>
+ ≒主観的な表現</p>
+  </li>
+</ol>
+
+<ul>
+  <li>1.と2.が分かるクチコミの有用性は高いと<br>
+  考えられる</li>
+  <li>2.と3.はUXに相当する</li>
+</ul>
 
 </section>
 <section>
@@ -115,9 +134,12 @@
   システムを通じた経験のこと</li>
   <li>次のようなものに影響をうける
     <ul>
-      <li>ユーザとシステムを取り巻く文脈</li>
-      <li>ユーザの状態</li>
-      <li>システムの特性</li>
+      <li>システムの特性<br>
+  → 客観的設計品質</li>
+      <li>ユーザとシステムを取り巻く文脈<br>
+  → 利用状況への適合性</li>
+      <li>ユーザの状態<br>
+  → ユーザ特性への適合性</li>
     </ul>
   </li>
 </ul>
@@ -127,18 +149,16 @@
 </section>
 <section>
 
-<p>システムを利用している瞬間以外も<br>
-UXは形成されている</p>
+<p style="position: absolute; top: 200px; width: 500px;">商品を利用している<br>瞬間以外も<br>UXは形成されている</p>
 
-<p><img src="images/2019-11-19_15-12-21.png" alt="" style="height: 400px;"></p>
+<p><img src="images/2019-11-19_15-12-21.png" alt="" style="margin-left: 500px; height: 500px;"></p>
 
 <p><small>出典：<a href="http://site.hcdvalue.org/docs">UX白書(日本語版)</a></small></p>
 
 </section>
 <section>
 
-<p>システムを利用している瞬間以外も<br>
-UXは形成されている</p>
+<p>利用期間ごとに形成されるUXの性質は異なる</p>
 
 <p><img src="images/2019-11-19_15-47-06.png" alt=""></p>
 
@@ -147,43 +167,17 @@ UXは形成されている</p>
 </section>
 <section>
 
-<p>『主観的な表現以外の記述』とは？</p>
-
-<p>UXの定義を元に考えれば…</p>
-
-<ol>
-  <li>製品・サービスの特性</li>
-  <li>ユーザの利用状況
-    <ul>
-      <li>だれが</li>
-      <li>いつ</li>
-      <li>どこで</li>
-      <li>なにを</li>
-      <li>なぜ</li>
-      <li>どうやって</li>
-    </ul>
-  </li>
-</ol>
-
-<p>どうやってこれらの記述を促す？</p>
-
-</section>
-<section>
-
-<p>UX評価とは</p>
+<p>UXにおいて、エピソードが発生した<br>
+時間的順序と期間は重要</p>
 
 <ul>
-  <li>UXに当てはまる事象を評価する</li>
-  <li>UXのどの期間に着目するかによって<br>
-  最適なアプローチは異なる
-    <ul>
-      <li>利用前</li>
-      <li>利用中</li>
-      <li>利用後</li>
-      <li>利用期間全体</li>
-    </ul>
-  </li>
+  <li>
+<strong>いつ</strong>どんな利用をしたのか</li>
+  <li>
+<strong>いつ</strong>なにを感じたのか</li>
 </ul>
+
+<p>UXの評価手法においても同様</p>
 
 </section>
 <section>
@@ -191,7 +185,7 @@ UXは形成されている</p>
 <p>UXカーブとは</p>
 
 <p>横軸に時間、縦軸に魅力、使いやすさなどの<br>
-度合いをペンで描く</p>
+度合いをペンで描くことでUXを評価する</p>
 
 <p><img src="images/2019-11-19_16-23-19.png" alt="" style="height: 300px;"></p>
 
@@ -200,7 +194,7 @@ UXは形成されている</p>
 </section>
 <section>
 
-<p>なぜUXカーブなのか</p>
+<p>UXカーブの特徴</p>
 
 <ul>
   <li>思い出しながら書くので、1回の入力で<br>
@@ -209,23 +203,49 @@ UXは形成されている</p>
   <li>時系列の順序でUXが整理できる</li>
 </ul>
 
-</section>
-<section>
-
-<p>UXカーブ</p>
-
-<p><img src="images/ux-curve.png" alt="" style="height: 500px;"></p>
+<p>UXカーブを応用してクチコミを記述すれば、<br>
+どんな風に利用してどのような結果が得られたか<br>
+分かるクチコミになる</p>
 
 </section>
 <section>
 
-<p>UXグラフ</p>
+<p>類似したオンラインツールがある</p>
 
-<p><img src="images/ux-graph.png" alt="" style="height: 500px;"></p>
+<video controls="" src="images/ux-graph-tool-demo.mp4" style="height: 500px"></video>
+
+<p><small><a href="https://ux-graph.com/uxgraph/">UXグラフツール - UX評価 （インタビュー）サポートツール</a></small></p>
 
 </section>
 <section>
 
-<p>まとめ</p>
+<p>実装したもの</p>
+
+<video controls="" src="images/ux-curve-generator-demo.mp4" style="height: 500px"></video>
+
+<p><small><a href="https://ux-curve-generator.netlify.com">UXカーブジェネレーター</a></small></p>
+
+</section>
+<section>
+
+<p>UXグラフツールとの違い</p>
+
+<ul>
+  <li>UXカーブが変化するのをみながら<br>
+  エピソードを入力する</li>
+  <li>エピソードの日時を他のエピソードの<br>
+  相対的な時間で入力できる</li>
+  <li>調査設計者が調査参加者に入力させるのでなく<br>
+  ユーザが自身のために入力する</li>
+  <li>入力したUXカーブは任意のウェブページに<br>
+  埋め込むことができる</li>
+</ul>
+
+</section>
+<section>
+
+<p>埋め込み例</p>
+
+<iframe src="images/example.html" style="width: 400px; height: 500px;"></iframe>
 
 </section>
